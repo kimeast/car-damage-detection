@@ -1,0 +1,38 @@
+데이터 출처 : AI-HUB 
+https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=581
+
+데이터 한 줄 개요 : 사고 자동차 이미지를 수집한 AI 데이터셋으로, 차량 외관 부품의 세그멘테이션과 손상 유형 및 범위를 이해할 수 있는 형태로 가공된 다양한 차종 및 부품에 대한 학습 데이터셋 구축
+
+구축년도 : 2021년
+개방년도 : 2022년
+최종 데이터 : 수정년도 2023년
+
+raw 데이터 크기 : 이미지 파일(JPG) 50만장 47기가바이트,
+
+분석 목적 : 
+
+Why 
+- A. 
+차량 손상 유무
+(0,1 범주형) + 
+
+손상 유형
+(Scratched, Breakage, Separated, Crushed) + 
+
+손상 부위
+(Front bumper, Trunk lid, Bonne, Head lights(L), Rear bumper, Rear door(R), Front door(R), Rear fender(R), Rear fender(L), Rear lamp(R), Side mirror(R), A pillar(L), Rear door(L), Front door(L), Front fender(R), Front Wheel(L), Front Wheel(R), Rear lamp(L), Front fender(L), Rocker panel(R), Head lights(R), Rear Wheel(R), Rear Wheel(L), C pillar(L), Side mirror(L), Rocker panel(L), Windshield, C pillar(R), Rear windshield, Undercarriage, Roof, A pillar(R), B pillar(R))
+
+- B. 
+차량 오염 유무
+(0,1 범주형) + 
+
+오염 부위
+(Front bumper, Trunk lid, Bonne, Head lights(L), Rear bumper, Rear door(R), Front door(R), Rear fender(R), Rear fender(L), Rear lamp(R), Side mirror(R), A pillar(L), Rear door(L), Front door(L), Front fender(R), Front Wheel(L), Front Wheel(R), Rear lamp(L), Front fender(L), Rocker panel(R), Head lights(R), Rear Wheel(R), Rear Wheel(L), C pillar(L), Side mirror(L), Rocker panel(L), Windshield, C pillar(R), Rear windshield, Undercarriage, Roof, A pillar(R), B pillar(R))
+
+를 Classification 해주는 딥러닝 모델을 구축,사고차량 견적 과정을 일부 자동화
+
+How 
+- 머신러닝 분야 中 CNN을 대체하여 주로 사용되는 ViT(비전 트랜스포머)를 활용
+
+기타 데이터 부가 설명 :
+damage vs damage_part : 전자가 파손부위 근접 촬영본, 후자가 파손부위 원거리 촬영본임
